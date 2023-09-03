@@ -32,9 +32,9 @@ for submission in subreddit.hot(limit=10):
     if submission.id not in posts_replied_to:
 
         # Do a case insensitive search
-        if re.search("hello jendubu bot", submission.title, re.IGNORECASE):
+        if re.search("hello dubu bot", submission.title, re.IGNORECASE):
             # Reply to the post
-            submission.reply("hello\n - jendubu bot")
+            submission.reply("hello\n - dubu bot")
             print("Bot replying to : ", submission.title)
 
             # Store the current id into our list
